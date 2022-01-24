@@ -3,6 +3,9 @@
 # Checkout vendor repo
 echo "Cloning Bttstrp/bootstrap-switch github repo into tmp_vendor"
 git clone https://github.com/Bttstrp/bootstrap-switch.git tmp_vendor
+cd tmp_vendor
+git checkout tags/v3.3.4
+cd ..
 
 # Copy files
 echo "Copying bootstrap-switch.js"
